@@ -10,5 +10,5 @@ public interface TaskRepository extends JpaRepository<NotificationTask, Long> {
 
     Collection<NotificationTask> getNotificationTasksByUserID(Long userID);
 
-    Collection<NotificationTask> findNotificationTasksByNotificationBetween(LocalDateTime start, LocalDateTime range);
+    Collection<NotificationTask> findNotificationTasksByNotification(LocalDateTime time);
 }
